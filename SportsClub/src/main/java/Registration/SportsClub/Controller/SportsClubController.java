@@ -303,6 +303,7 @@ public class SportsClubController {
 		RegistrationMaster sportsList=new RegistrationMaster();
 		String ret="";
 		System.out.println(ret);
+		System.out.println("success= "+ret);
 		try {
 			sportsList=sportsClubService.getSportsRegistrationListById(registration_id);
 			sportsList.setDeleted_flag("Y");
