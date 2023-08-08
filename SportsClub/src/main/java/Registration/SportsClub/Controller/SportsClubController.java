@@ -302,6 +302,7 @@ public class SportsClubController {
 	public String deleteSportsClub(@RequestParam(value="registration_id",required=true)Integer registration_id,RedirectAttributes redirectAttributes) {
 		RegistrationMaster sportsList=new RegistrationMaster();
 		String ret="";
+		System.out.println(ret);
 		try {
 			sportsList=sportsClubService.getSportsRegistrationListById(registration_id);
 			sportsList.setDeleted_flag("Y");
